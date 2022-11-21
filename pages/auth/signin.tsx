@@ -5,7 +5,7 @@ export default function LoginPage() {
     <div className="w-screen">
       <div className="container h-screen border_color mx-auto font-body border">
         <div className="w-full flex flex-col mt-12 items-center gap-6">
-          <div className="shadow-2xl flex items-center justify-center w-20 bg-white h-20 bg-white rounded-md">
+          <div className="shadow-2xl flex items-center justify-center w-20 bg-white h-20 bg-white rounded-2xl">
             <img className="w-12" src="/logo.svg" alt="" />
           </div>
           <div className="text-primaryText text-center">
