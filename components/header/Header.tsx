@@ -1,6 +1,5 @@
 import React from "react";
 import Calendar from "./Calendar";
-import DayCard from "./DayCard";
 import HeaderCom from "./HeaderCom";
 
 export default function Header() {
