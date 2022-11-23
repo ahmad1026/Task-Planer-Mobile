@@ -3,7 +3,7 @@ import DayCard from "./DayCard";
 
 export default function Header() {
   return (
-    <div>
+    <div className="bg-[#e0f1fc] pt-4">
       <div className="mx-4">
         <div className="flex justify-between items-center">
           <img className="w-7" src="/utils/Vector.svg" alt="" />

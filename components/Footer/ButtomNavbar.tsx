@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ButtomNavbar() {
   return (
-    <div className="w-full border-t border-[#E4EDFF] fixed bottom-0 flex px-3 py-2">
+    <div className="w-full border-t border-[#E4EDFF] bg-white fixed bottom-0 flex px-3 py-2">
       <div className="flex w-1/5 items-center flex-col">
         <img className="w-6" src="/bottomNav/appointments.svg" alt="" />
         <span className="text-primary text-xs">Agenda</span>

@@ -1,14 +1,11 @@
 import React from "react";
+import Ongoing from "../../components/ongoing/Ongoing";
 import Layout from "../../layout/Layout";
 export default function index() {
   return (
-    <div className="h-screen bg-[#e0f1fc] relative py-4">
+    <div className="h-screen relative">
       <Layout>
-        <div className="w-full h-screen mt-4 bg-white">
-
-        </div>
-        
-       
+        <Ongoing />
       </Layout>
     </div>
   );
