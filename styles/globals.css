@@ -4,9 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.container{
+body{
     max-width: 480px;
+    margin: auto;
 }
 
 .border_color{

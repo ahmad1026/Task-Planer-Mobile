@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SignInForm() {
   return (
-    <div className="container h-screen border border-[#E4EDFF] bor mx-auto font-body">
+    <div className="h-screen border border-[#E4EDFF] bor mx-auto font-body">
       <div className="w-full flex flex-col mt-12 items-center gap-6">
         <div className="shadow-2xl flex items-center justify-center w-20 bg-white h-20 bg-white rounded-2xl">
           <img className="w-12" src="/logo.svg" alt="" />

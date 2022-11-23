@@ -2,7 +2,7 @@ import React from "react";
 
 export default function GetStarted() {
   return (
-    <div className="container flex flex-col bg-[#F5FBFF] h-screen border border-[#E4EDFF] bor mx-auto font-body">
+    <div className="flex flex-col bg-[#F5FBFF] h-screen border border-[#E4EDFF] bor mx-auto font-body">
       <div className="mt-20 flex items-center justify-center">
         <img src="/OBJECTS.svg" alt="" />
       </div>
