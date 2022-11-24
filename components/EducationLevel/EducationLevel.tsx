@@ -1,5 +1,5 @@
 import React from "react";
-import { ILevel } from "../../interfaces/Level";
+import { ILevel } from "../../interfaces/ILevel";
 import Levels from "./Levels";
 
 const Fetures: ILevel[] = [

@@ -16,6 +16,8 @@ export const getMonth = (month: number) => {
   return Month[month];
 };
 
+
+
 export const getDayesMonth = (today: Date) => {
   const Days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
@@ -26,16 +28,19 @@ export const getDayesMonth = (today: Date) => {
   days.push({
     day: Days[date.getDay()],
     dayNum: date.getDate(),
+    month:date.getMonth(),
+    year:date.getFullYear()
   });
   while (thisMonth == date.getMonth()) {
     date.setDate(date.getDate() + 1);
     days.push({
       day: Days[date.getDay()],
       dayNum: date.getDate(),
+      month:date.getMonth(),
+      year:date.getFullYear()
     });
   }
   days.pop();
-  console.log(days);
 
   return days
 };
