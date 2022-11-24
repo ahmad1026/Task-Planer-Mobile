@@ -30,7 +30,6 @@ const DayCard: React.FC<IDay> = ({ day, dayNum, month, year }) => {
     }
   };
 
-  console.log(pastDate());
 
   return (
     <div

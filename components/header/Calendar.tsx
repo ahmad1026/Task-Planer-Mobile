@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState ,useRef } from "react";
 import { getMonth, getDayesMonth } from "../../lib/functions";
 import DayCard from "./DayCard";
 
 export default function Calendar() {
   const today = new Date();
-  const [thisMonth, setthisMonth] = useState(today.getMonth());
-
+  const thisMonth = useRef(today.getMonth());
   const [Today, setToday] = useState({
     Month: getMonth(today.getMonth()),
     lastMonth: getMonth(today.getMonth() - 1),
@@ -15,11 +14,13 @@ export default function Calendar() {
   const nextMonth = (state: string) => {
     const nowDate = new Date();
     if (state === "next") {
-      setthisMonth((prev) => prev + 1);
+        thisMonth.current = thisMonth.current + 1
+        //   setthisMonth((prev) => prev + 1);
     } else {
-      setthisMonth((prev) => prev - 1);
+        thisMonth.current = thisMonth.current - 1
+    //   setthisMonth((prev) => prev - 1);
     }
-    nowDate.setMonth(thisMonth);
+    nowDate.setMonth(thisMonth.current);
     setToday({
       Month: getMonth(nowDate.getMonth()),
       lastMonth: getMonth(
