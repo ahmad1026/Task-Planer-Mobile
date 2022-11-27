@@ -53,13 +53,13 @@ const levels = Fetures.map((feature: ILevel, index) => (
 export default function EducationLevelComp() {
   return (
     <div className="h-screen border border-[#E4EDFF] bg-[#F5FBFF] mx-auto font-body">
-      <div className="gap-4 flex text-primaryText flex-col mt-8 mx-6">
+      <div className="h-screen gap-8 flex text-primaryText flex-col pt-6 mx-6">
         <h1 className="text-2xl font-black">Education Level</h1>
         <p className="text-sm font-medium">
           Create a unique emotional story that describes better than words
         </p>
         <div className="flex flex-col gap-4">{levels}</div>
-        <div className="w-full flex justify-end">
+        <div className="w-full flex items-end flex-1 justify-end">
           <div className="w-1/5 text-lg text-right font-bold text-primary p-0">
             Skip
           </div>
